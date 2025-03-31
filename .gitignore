@@ -1,17 +1,44 @@
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-# https://github.com/takari/maven-wrapper#usage-without-binary-jar
-.mvn/wrapper/maven-wrapper.jar
+# Ignore Gradle build output
+/build/
+!gradle/wrapper/gradle-wrapper.jar
 
-# Eclipse m2e generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
+# Ignore Gradle caches and logs
+.gradle/
+gradle.log
+
+# Ignore dependency caches (Gradle 4.0+)
+**/caches/
+**/tmp/
+
+# Ignore Eclipse project files
 .classpath
+.project
+.settings/
+
+# Ignore IntelliJ IDEA project files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore generated JARs and other artifacts
+*.jar
+*.war
+*.ear
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+
+# DO NOT ignore JARs inside artifacts/
+!artifacts/*.jar
